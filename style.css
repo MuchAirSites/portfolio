@@ -60,7 +60,7 @@ a:hover {
 
 #wrapper {
 	width:100%;
-	background:url(images/headerbg.jpg) center top no-repeat;
+	background:url(https://muchairsites.github.io/portfolio/headerbg.jpg) center top no-repeat;
 	margin:-4px 0 0 0;
 }
 
@@ -79,7 +79,7 @@ a:hover {
 h1{
 	margin:43px 0 0 0px;
 	padding:0px 0 0 70px;
-	background:url(images/logo.png) left top no-repeat;
+	background:url(https://muchairsites.github.io/portfolio/logo.png) left top no-repeat;
 	font-size:60px;
 	font-weight:bold;
 	font-family:"myriad pro";
@@ -130,7 +130,7 @@ h1 a span{
 
 #menu ul li.selected a{
 	color:#fffdbf;
-	background:url(images/menuhover.png) repeat;	
+	background:url(https://muchairsites.github.io/portfolio/menuhover.png) repeat;	
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 
@@ -164,13 +164,13 @@ h1 a span{
 }
 
 #footer {
-	background:url(images/footerline.jpg) left top repeat-x #0e1424;
+	background:url(https://muchairsites.github.io/portfolio/footerline.jpg) left top repeat-x #0e1424;
 	clear:both;
 		margin:20px 0 0px 0;
 }
 
 #footer .content {
-	background:url(images/footer.jpg) center top no-repeat #0e1424;
+	background:url(https://muchairsites.github.io/portfolio/footer.jpg) center top no-repeat #0e1424;
 	padding:30px 0 115px 0;
 }
 
@@ -244,7 +244,7 @@ h5 a:hover{
 
 #topline {
 	clear:both;
-	background:url(images/atop.png) left top repeat-x;
+	background:url(ihttps://muchairsites.github.io/portfolio/atop.png) left top repeat-x;
 	height:44px;
 }
 
@@ -256,7 +256,7 @@ h5 a:hover{
 	display:inline-block;
 	width:204px;
 	height:34px;
-	background:url(images/network.png) left top no-repeat;
+	background:url(https://muchairsites.github.io/portfolio/network.png) left top no-repeat;
 	text-align:center;
 	cursor:pointer;
 	padding:10px 0 0 0;
