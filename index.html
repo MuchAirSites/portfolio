@@ -3,45 +3,265 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Design Portfolio Template</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-
+    <style>
+        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+            border:0pt none;
+            font-family:inherit;
+            font-size:100%;
+            font-style:inherit;
+            font-weight:inherit;
+            margin:0pt;
+            outline:0;
+            padding:0pt;
+            vertical-align:baseline;
+        }
+        table {
+            border-collapse:separate;
+            border-spacing:0pt;
+        }
+        caption, th, td {
+            font-weight:normal;
+            text-align:left;
+        }
+        blockquote:before, blockquote:after, q:before, q:after {
+            content:"";
+        }
+        blockquote, q {
+            quotes:"" "";
+        }
+        strong, b {
+            font-weight:bold;
+        }
+        em, i {
+            font-style:italic;
+        }
+        * {
+            margin:0pt;
+            padding:0pt;
+        }
+        body {
+            background:#151d30;
+            font-size:12px;
+            font-family:arial, sans-serif;
+        }
+        a {
+            color:#fefefe;
+            text-decoration:none;
+        }
+        a:hover {
+            color:#fefefe;
+            text-decoration:none;
+        }
+        #top {
+            height:220px;
+            display:none;
+            background:#152e46;
+        }
+        #wrapper {
+            width:100%;
+            background:url(images/headerbg.jpg) center top no-repeat;
+            margin:-4px 0 0 0;
+        }
+        .content {
+            width:940px;
+            margin:0 auto;
+        }
+        #header {
+            padding:35px 0;
+            color:#fff;
+        }
+        h1 {
+            margin:43px 0 0 0;
+            padding:0 0 0 70px;
+            background:url(images/logo.png) left top no-repeat;
+            font-size:60px;
+            font-weight:bold;
+            font-family:"myriad pro";
+            color:#fff;
+        }
+        h1 a {
+            color:#fff;
+            display:block;
+        }
+        h1 a:hover {
+            color:#fff;
+        }
+        h1 a span {
+            font-size:16px;
+            font-weight:normal;
+            color:#cfe7f1;
+            display:block;
+            text-transform:uppercase;
+            position:absolute;
+        }
+        #menu ul {
+            font-size:30px;
+            list-style:none;
+            color:#fffdbf;
+            text-align:center;
+            margin:100px 0 0 0;
+        }
+        #menu ul li {
+            display:inline;
+        }
+        #menu ul li a {
+            color:#fffdbf;
+            display:inline-block;
+            padding:12px 22px;
+            line-height:27px;
+            text-decoration:none;
+        }
+        #menu ul li a:hover {
+            color:#fff;
+        }
+        #menu ul li.selected a {
+            color:#fffdbf;
+            background:url(images/menuhover.png) repeat;
+            border-radius:3px;
+        }
+        #container {
+            width:636px;
+        }
+        #container img {
+            padding:0 15px 15px 0;
+        }
+        .sidebar {
+            width:295px;
+            float:right;
+            padding:0;
+        }
+        .sidebar img {
+            margin:0 7px 15px 0;
+        }
+        #footer .sidebar img {
+            width:140px;
+            height:141px;
+        }
+        .sidebar img.noright {
+            margin-right:0;
+        }
+        #footer {
+            background:url(images/footerline.jpg) left top repeat-x #0e1424;
+            clear:both;
+            margin:20px 0 0 0;
+        }
+        #footer .content {
+            background:url(images/footer.jpg) center top no-repeat #0e1424;
+            padding:30px 0 115px 0;
+        }
+        h3 {
+            font-size:16px;
+            color:#fefefe;
+            padding:0 0 10px 0;
+        }
+        #footer p {
+            font-size:15px;
+            color:#fefefe;
+            padding:5px 0;
+        }
+        #footer p a:hover {
+            text-decoration:underline;
+            color:#fefefe;
+        }
+        #left {
+            float:left;
+            width:200px;
+            padding:0 100px 0 0;
+        }
+        h4 {
+            font-family:"Myriad Pro";
+            font-size:30px;
+            font-weight:bold;
+            color:#fffdbf;
+            padding:40px 0 12px 0;
+        }
+        #top p {
+            font-size:16px;
+            font-family:Arial;
+            color:#97b6d3;
+            line-height:22px;
+            padding:0 0 10px 0;
+        }
+        h5 {
+            display:inline-block;
+            padding:17px 0;
+            font-family:"Myriad Pro";
+            font-weight:bold;
+        }
+        h5 a {
+            margin:0 25px 0 0;
+            color:#fffdbf;
+            font-size:22px;
+        }
+        h5 a:hover {
+            text-decoration:underline;
+            color:#fffdbf;
+        }
+        #insidetop {
+            margin:0 auto;
+            width:840px;
+        }
+        #topline {
+            clear:both;
+            background:url(images/atop.png) left top repeat-x;
+            height:44px;
+        }
+        #topline .content {
+            text-align:right;
+        }
+        #topline .content a {
+            display:inline-block;
+            width:204px;
+            height:34px;
+            background:url(images/network.png) left top no-repeat;
+            text-align:center;
+            cursor:pointer;
+            padding:10px 0 0 0;
+            font-family:Georgia, "Times New Roman", Times, serif;
+            font-size:12px;
+            text-transform:uppercase;
+        }
+        #footer .content a span.leftp {
+            font-size:11px;
+            color:#41536a;
+            float:left;
+            text-transform:uppercase;
+            margin:90px 0 15px 0;
+        }
+        #footer .content a span.rightp {
+            font-size:11px;
+            color:#41536a;
+            float:right;
+            text-transform:uppercase;
+            margin:90px 0 15px 0;
+        }
+    </style>
 </head>
-
 <body>
-
 
     <div id="top">
         <div id="insidetop">
             <h4>Drop Down Menu</h4>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem 			   		ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporall</p>
-
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
             <h5><a href="#">Your Site Here</a></h5>
             <h5><a href="#">Your Site Here</a></h5>
             <h5><a href="#">Your Site Here</a></h5>
             <h5><a href="#">Your Site Here</a></h5>
             <h5><a href="#">Your Site Here</a></h5>
-
-        </div><!--insidetop-->
-    </div><!-- top -->
+        </div>
+    </div>
 
     <div id="topline">
         <div class="content">
             <a><strong>YOUR SITE</strong> NETWORK</a>
         </div>
-    </div><!-- topline -->
-
+    </div>
 
     <div id="wrapper">
-
         <div class="content">
-
             <div id="header">
-
                 <h1><a href="#"><span>your design</span>portfolio</a></h1>
-
                 <div id="menu">
-
                     <ul>
                         <li><a href="#">home</a></li>
                         <li class="selected"><a href="#">portfolio</a></li>
@@ -49,93 +269,11 @@
                         <li><a href="#">about</a></li>
                         <li><a href="#">contact us</a></li>
                     </ul>
-
-                </div><!-- menu -->
-
-            </div><!--header-->
+                </div>
+            </div>
 
             <div class="sidebar">
-
                 <a href="#"><img src="images/sidebar.jpg" alt="" border="0" /></a>
                 <a href="#"><img src="images/sidebar.jpg" alt="" border="0" /></a>
-
-
                 <a href="#"><img src="images/sidebarmini.jpg" alt="" border="0" /></a>
                 <a href="#"><img src="images/sidebarmini.jpg" alt="" border="0" class="noright" /></a>
-
-                <a href="#"><img src="images/sidebarmini.jpg" alt="" border="0" /></a>
-                <a href="#"><img src="images/sidebarmini.jpg" alt="" border="0" class="noright" /></a>
-
-                <a href="#"><img src="images/sidebarmini.jpg" alt="" border="0" /></a>
-                <a href="#"><img src="images/sidebarmini.jpg" alt="" border="0" class="noright" /></a>
-
-
-            </div><!--sidebar-->
-
-            <div id="container">
-
-                <a href="#"><img src="images/box.jpg" alt="" border="0" /></a>
-                <a href="#"><img src="images/box.jpg" alt="" border="0" /></a>
-
-                <a href="#"><img src="images/box.jpg" alt="" border="0" /></a>
-                <a href="#"><img src="images/box.jpg" alt="" border="0" /></a>
-
-                <a href="#"><img src="images/box.jpg" alt="" border="0" /></a>
-                <a href="#"><img src="images/box.jpg" alt="" border="0" /></a>
-
-            </div><!--container-->
-
-        </div><!--content-->
-
-    </div><!--wrapper-->
-
-    <div id="footer">
-        <div class="content">
-
-            <div class="sidebar">
-
-                <a href="#"><img src="images/footerbox.png" alt="" border="0" /></a>
-                <a href="#"><img src="images/footerbox.png" alt="" border="0" class="noright" /></a>
-
-            </div><!--sidebar-->
-            <div id="left">
-                <h3>SPONSORSHIP FRIENDS</h3>
-                <p><a href="#">Website Templates</a></p>
-                <p><a href="#">Website Builder</a></p>
-                <p><a href="#">Web design</a></p>
-                <p><a href="#">Powerpoint Templates</a></p>
-                <p><a href="#">Hosting Reseller</a></p>
-                <p><a href="#">Dedicated Server Hosting</a></p>
-            </div><!--left-->
-
-            <div id="right">
-                <h3>OUR RESOURCE SITES</h3>
-                <p><a href="#">Branding and Identity </a></p>
-                <p><a href="#">Nature Based CSS Gallery </a></p>
-                <p><a href="#">Free Vector Illustrations</a></p>
-                <p><a href="#">Organic Web Design</a></p>
-                <p><a href="#">Web Design</a></p>
-                <p><a href="#">West Coast Clothing Co</a></p>
-            </div><!--right-->
-
-            <br />
-            <p style="color:white;">&#169; <a href="https://info.icopyright.net/" style="color:#0AE618">Copyright</a>. <script type="text/javascript">document.write(new Date().getFullYear());</script>. <a href="https://www.opensourcetemplates.org/index.html" style="color:#0AE618">Open Source Website Templates</a>. All Rights Reserved. <a href="https://www.opensourcetemplates.org/terms.html" style="color:#0AE618">Terms</a> | <a href="https://www.opensourcetemplates.org/sitemap.html" style="color:#0AE618">Site Map</a> | <a href="https://themeruler.com/" style="color:#0AE618">More Themes</a></p>
-
-
-
-        </div><!--content-->
-
-    </div><!--footer-->
-
-    <script type='text/javascript'>
-        $(document).ready(function () {
-
-            $("div#topline a").click(function () {
-                $("#top").slideToggle("slow");
-                $(this).toggleClass("active");
-            });
-
-        });
-    </script>
-</body>
-</html>
